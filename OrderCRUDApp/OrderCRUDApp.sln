@@ -5,6 +5,10 @@ VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderCRUDApp", "OrderCRUDApp.csproj", "{F2723F41-CC2F-446D-A63F-55C01C6EDA76}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderCRUDApp.data", "..\OrderCRUDApp.data\OrderCRUDApp.data.csproj", "{653E493C-EE7C-4B7C-8F4B-DA12F0C04A55}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderCRUDApp.Repos", "..\OrderCRUDApp.Repos\OrderCRUDApp.Repos.csproj", "{20E400BB-144B-478A-A14D-9A20214550B6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{F2723F41-CC2F-446D-A63F-55C01C6EDA76}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F2723F41-CC2F-446D-A63F-55C01C6EDA76}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F2723F41-CC2F-446D-A63F-55C01C6EDA76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{653E493C-EE7C-4B7C-8F4B-DA12F0C04A55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{653E493C-EE7C-4B7C-8F4B-DA12F0C04A55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{653E493C-EE7C-4B7C-8F4B-DA12F0C04A55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{653E493C-EE7C-4B7C-8F4B-DA12F0C04A55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20E400BB-144B-478A-A14D-9A20214550B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20E400BB-144B-478A-A14D-9A20214550B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20E400BB-144B-478A-A14D-9A20214550B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20E400BB-144B-478A-A14D-9A20214550B6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
