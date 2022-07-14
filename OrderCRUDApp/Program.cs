@@ -1,3 +1,8 @@
+using Microsoft.EntityFrameworkCore;
+using OrderCRUDApp.data.Entities;
+using OrderCRUDApp.Repos;
+using OrderCRUDApp.Repos.Interfaces;
+
 namespace OrderCRUDApp
 {
     public class Program
@@ -5,9 +10,17 @@ namespace OrderCRUDApp
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+            string connString = builder.Configuration.GetConnectionString("DefaultConnection");
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+
+            builder.Services.AddDbContext<EFContext>(optin => 
+            optin.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"), b => b.MigrationsAssembly("OrderCRUDApp.data")) );
+
+            builder.Services.AddScoped(typeof(IUnitOfWork), typeof(UnitOfWork));
+            builder.Services.AddScoped(typeof(IRepository<>), typeof(GenericRepository<>));
+
 
             var app = builder.Build();
 

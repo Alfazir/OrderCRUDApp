@@ -4,5 +4,30 @@
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+  @* <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>*@ 
+</div>
+
+
+<div class="container">
+    <table class="table">
+        <tr>
+            <th>GGGGGG</th>
+            <th>GGGGGGGGG</th>
+            <th>GGGGGGG</th>
+            <th>GGGGGGGGG</th>
+            <th>GGGGGGGGG</th>
+        </tr>
+        @foreach (var order in @Model.Orders)
+        {
+            <tr>
+                <td>@order.Number</td>
+                <td>@order.Date</td>
+                <td>@order.Number</td>
+                <td>@order.Number</td>
+                <td>@order.Number</td>
+
+            </tr>
+        }
+
+    </table>
 </div>

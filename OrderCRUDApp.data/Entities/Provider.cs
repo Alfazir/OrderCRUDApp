@@ -4,15 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OrderCRUD.DAL.Entities
+namespace OrderCRUDApp.data.Entities
 {
-    public class OrderItem
+    public class Provider
     {
         public int Id { get; set; }
-        public Order? Order { get; set; }
         public string? Name { get; set; }
-        public decimal Quantity { get; set; }
-        public string? Unit { get; set; }
-
     }
 }

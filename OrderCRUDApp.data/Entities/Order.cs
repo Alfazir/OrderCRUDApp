@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OrderCRUD.DAL.Entities
+namespace OrderCRUDApp.data.Entities
 {
     public class Order
     {
